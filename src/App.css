@@ -1,42 +1,92 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*{
+   align-items: center;
+   justify-content: center;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+   font-weight: 100;
+}
+html{
+    background-color: rgb(241, 221, 197);
+    overflow-x: hidden;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.container-header{
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    align-items: flex-start;
+    background-color: rgb(241, 205, 205);
+    background-image: url('/img/img-header.jpg');
+    text-shadow: 0 0 25px rgb(0, 0, 0);
+    background-size: cover;
+    background-position-y:-450px ;
+    background-repeat: no-repeat;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.container-header h1{
+    position: absolute;
+    top: 125px;
+    font-size: 7rem;
+    color: rgb(255, 184, 126);
+    z-index: 2;
+    filter: grayscale(0);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.navbar{
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    background-color: rgba(32, 65, 92, 0.753);
+    display: flex;
+    justify-content: end;
+    gap: 25px;
+    z-index: 2;
+}
+.navbar h3{
+    margin-right: 50px;
+    color: rgb(167, 165, 192);
+    cursor: pointer;
+    transition: all .5s;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar h3:hover{
+    color: rgb(255, 248, 227);
+    transition: all .5s;
+}
+.search{
+    width: 100px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    justify-content: space-evenly;
+}
+.search section{
+    display: flex;
+    gap: 50px;
+}
+.search h3{
+    cursor: pointer;
+    color: rgb(91, 122, 180);
+}
+.search h3:hover{
+    cursor: pointer;
+    color: rgb(170, 83, 32);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.search article{
+    position: absolute;
+    top:600px;
+    width: 90vw;   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.search img{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
 }
 
-.card {
-  padding: 2em;
-}
 
-.read-the-docs {
-  color: #888;
-}
+
